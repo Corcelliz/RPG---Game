@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 50vh;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", serif;
+  background-image: url(assets/dragao2.jpg);
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  background-color: #0a0a23;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 2vh;
+}
+
+.dragon-title:hover {
+  color: #ff1d1d;
+  transition: all 0.3s ease-in-out;
+}
+
+#text {
+  display: flex;
+  background-color: #0a0a23;
+  color: #ffffff;
+  padding: 15px;
+  justify-content: center;
+  border-radius: 0 0 10px 10px;
+  font-size: large;
+}
+
+#game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 600px;
+  max-height: 400px;
+  color: #ffffff;
+  margin: 220px auto 0px;
+  border-radius: 10px;
+  font-family: "Roboto Mono", serif;
+}
+
+#controls,
+#stats {
+  padding: 15px;
+  border-radius: 10px;
+  font-size: large;
+}
+
+#stats {
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 1px solid #0a0a23;
+  background-color: #0a0a23;
+  
+}
+
+#controls {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px 0 20px 0;
+}
+
+#monsterStats {
+  font-size: 17px;
+  display: none;
+  text-align: center;
+  border: 1px solid #0a0a23;
+  padding: 15px;
+  color: #ffffff;
+  background-color: #c70d0d;
+  border-radius: 10px 10px 0 0;
+}
+
+#monsterName {
+  padding-right: 15px;
+}
+
+button {
+  font-family: "Roboto Mono", serif;
+  position: relative;
+  background-color: rgb(10, 10, 35, 1);
+  border-radius: 15px;
+  padding: 15px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  box-sizing: border-box;
+  width: 154px;
+  height: 70px;
+  color: #fff;
+  border: none;
+  font-size: 13px;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+  overflow: hidden;
+}
+
+button::before {
+  content: "";
+  background-color: rgb(32, 32, 121);
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: width 300ms ease-in-out;
+}
+
+button:hover::before {
+  width: 100%;
+}
+
+.stat1:hover {
+  color: rgb(28, 11, 184);
+  transition: 200ms ease-in-out ;
+}
+
+.stat2:hover {
+  color: rgb(0, 196, 0);
+  transition: 200ms ease-in-out ;
+}
+
+.stat3:hover {
+  color: yellow;
+  transition: 200ms ease-in-out ;
+}
+
+@media (max-width: 460px) {
+  #game {
+    max-width: 90%; 
+    margin: 10rem auto; 
+    height: 320px;
+    box-sizing: border-box;
+  }
+  #button1,
+  #button2,
+  #button3 {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    justify-content: center;
+  }
+  #controls {
+    justify-content: center;
+    font-size: none;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+  }
+}
