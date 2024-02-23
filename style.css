@@ -92,37 +92,15 @@ h1 {
 
 button {
   font-family: "Roboto Mono", serif;
-  position: relative;
   background-color: rgb(10, 10, 35, 1);
   border-radius: 15px;
   padding: 15px;
   background-repeat: no-repeat;
   cursor: pointer;
-  box-sizing: border-box;
   width: 154px;
   height: 70px;
   color: #fff;
-  border: none;
   font-size: 13px;
-  transition: all 0.3s ease-in-out;
-  z-index: 1;
-  overflow: hidden;
-}
-
-button::before {
-  content: "";
-  background-color: rgb(32, 32, 121);
-  width: 0;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transition: width 300ms ease-in-out;
-}
-
-button:hover::before {
-  width: 100%;
 }
 
 .stat1:hover {
@@ -161,5 +139,42 @@ button:hover::before {
     flex-wrap: wrap;
     align-items: center;
     gap: 12px;
+  }
+  
+}
+
+@media(min-width: 461px) {
+  button {
+    font-family: "Roboto Mono", serif;
+    position: relative;
+    background-color: rgb(10, 10, 35, 1);
+    border-radius: 15px;
+    padding: 15px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 154px;
+    height: 70px;
+    color: #fff;
+    font-size: 13px;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+    overflow: hidden;
+  }
+  
+  button::before {
+    content: "";
+    background-color: rgb(32, 32, 121);
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 300ms ease-in-out;
+  }
+  
+  button:hover::before {
+    width: 100%;
   }
 }
