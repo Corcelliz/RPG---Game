@@ -120,10 +120,8 @@ button {
 
 @media (max-width: 460px) {
   body {
-    background-attachment: fixed;
     background-image: url(assets/dragao4.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
   }
   
   #game {
