@@ -121,7 +121,6 @@ button {
 @media (max-width: 460px) {
   body {
     background-image: url(assets/dragao4.jpg);
-    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
