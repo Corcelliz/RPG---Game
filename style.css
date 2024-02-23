@@ -120,10 +120,8 @@ button {
 
 @media (max-width: 460px) {
   body {
-    background-image: url(assets/dragao4.jpg);
-    background-repeat: no-repeat;
+    background: linear-gradient(to right, #ef473a, #cb2d3e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
-  
   #game {
     max-width: 90%; 
     margin: 10rem auto; 
