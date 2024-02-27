@@ -7,12 +7,15 @@ html {
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 530px;
   box-sizing: border-box;
   font-family: "Roboto Mono", serif;
   background-image: url(assets/dragao2.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
 }
 
 .title {
@@ -24,7 +27,7 @@ body {
 }
 
 h1 {
-  font-size: 2vh;
+  font-size: large;
 }
 
 .dragon-title:hover {
@@ -48,9 +51,7 @@ h1 {
   justify-content: center;
   max-width: 600px;
   max-height: 400px;
-  color: #ffffff;
-  margin: 220px auto 0px;
-  border-radius: 10px;
+  color: #ffffff;  border-radius: 10px;
   font-family: "Roboto Mono", serif;
 }
 
@@ -120,11 +121,14 @@ button {
 
 @media (max-width: 460px) {
   body {
-    background: linear-gradient(to right, #ef473a, #cb2d3e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    align-items: center;
+    height: 550px;
+    background: linear-gradient(to right, #ef473a, #cb2d3e);
   }
   #game {
     max-width: 90%; 
-    margin: 10rem auto; 
+    margin: 5rem auto; 
     height: 320px;
     box-sizing: border-box;
   }
