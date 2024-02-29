@@ -1,7 +1,7 @@
 /* Definindo as variaveis do jogo */
 let xp = 0;
 let health = 100;
-let gold = 50;
+let gold = 1250;
 let currentWeapon = 0;
 let fighting;
 let monsterHealth;
@@ -188,7 +188,7 @@ function attack() {
   if (isMonsterHit()) {
     monsterHealth -= weapons[currentWeapon].power + Math.floor(Math.random() * xp) + 1;
   } else {
-    text.innerText = + " Você errou!."
+    text.innerText += " Você errou!."
   }
   monsterHealth -= weapons[currentWeapon].power + Math.floor(Math.random() * xp) + 1;
   healthText.innerText = health;
@@ -203,7 +203,7 @@ function attack() {
     }
   }
   if (Math.random() <= .1 && inventory.length !== 1) {
-    text.innerText = " Sua " + inventory.pop() + " quebrou."
+    text.innerText += " Sua " + inventory.pop() + " quebrou."
     currentWeapon--;
   }
 }
